@@ -9,3 +9,5 @@ extern "C" struct POINT
     POINT(int x_, int y_) : x(x_), y(y_){}
 };
 extern "C" POINT bar();
+
+extern "C" int add(int a, int b);
