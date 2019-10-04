@@ -1,4 +1,5 @@
 #include "lib.h"
+#include <string>
 
 int foo()
 {
@@ -13,4 +14,12 @@ POINT bar()
 int add(int a, int b)
 {
     return a + b;
+}
+
+int ptr_test(char* v, int len)
+{
+    for(int i = 0; i < len; ++i)
+        v[i] = 'a' + i;
+    v[len] = '\0';
+    return 0;
 }

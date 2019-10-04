@@ -11,3 +11,5 @@ extern "C" struct POINT
 extern "C" POINT bar();
 
 extern "C" int add(int a, int b);
+
+extern "C" int ptr_test(char* v, int len);

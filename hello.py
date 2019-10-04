@@ -19,3 +19,24 @@ add          = mydll.add
 add.argtypes = [c_int, c_int]
 add.restype  = c_int
 print("3 + 4 = " + str(add(3,4)))
+
+# specifying a python fn as the restype of a cpp fn
+def check_retval(val):
+    if(val == 7):
+        return "Bingo"
+    return "No dice"
+add.restype = check_retval
+print("3 + 4 = " + str(add(3,4)))
+
+# passing by ref
+ptr_test          = mydll.ptr_test
+ptr_test.argtypes = [c_char_p,c_int]
+ptr_test.restype  = c_int
+buffer_len        = 4
+buffer            = create_string_buffer(buffer_len)
+retval            = ptr_test(buffer, buffer_len)
+print(str(retval))
+print(buffer)
+print(buffer.value)
+print(repr(buffer.value))
+print("ptr_test = " + repr(buffer.value))
