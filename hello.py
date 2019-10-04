@@ -1,3 +1,10 @@
+# -----
+# Notes
+# -----
+# str(x)  - is the human readable representation of x (calls object's __str__) impl
+# repr(x) - is the developer representation of x (calls object's __repr__) impl
+# ----
+
 from ctypes import *
 
 # load lib
@@ -38,8 +45,7 @@ retval            = ptr_test(buffer, buffer_len)
 print(str(retval))
 print(buffer)
 print(buffer.value)
-print(repr(buffer.value))
-print("ptr_test = " + repr(buffer.value))
+print("ptr_test = " + str(buffer.value))
 
 # allocating and returning byte data from cpp -> python
 INT_POINTER        = POINTER(c_int)
