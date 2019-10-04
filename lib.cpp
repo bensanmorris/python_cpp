@@ -23,3 +23,13 @@ int ptr_test(char* v, int len)
     v[len] = '\0';
     return 0;
 }
+
+char* get_bytes(int& len)
+{
+    int   n      = 4;
+    char* retval = new char[n];
+    for(int i = 0; i < n; ++i)
+        retval[i] = 'a' + i;
+    len = n;
+    return retval;
+}

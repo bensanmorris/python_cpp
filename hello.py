@@ -40,3 +40,16 @@ print(buffer)
 print(buffer.value)
 print(repr(buffer.value))
 print("ptr_test = " + repr(buffer.value))
+
+# allocating and returning byte data from cpp -> python
+INT_POINTER        = POINTER(c_int)
+CHAR_POINTER       = POINTER(c_char)
+get_bytes          = mydll.get_bytes
+get_bytes.argtypes = [INT_POINTER]
+get_bytes.restype  = CHAR_POINTER
+size               = c_int(0)
+retval             = get_bytes(byref(size))
+print(size)
+print(retval)
+for i in range(size.value):
+    print(retval[i])
