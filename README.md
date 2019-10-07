@@ -10,6 +10,8 @@ Demonstrates calling C++ code / structures from python.
     - (configure, generate)
     - make
     - python hello.py
+    
+There is also a set of practice python code snippets in practice.py.
 
 #### Packaging:
 
