@@ -15,6 +15,7 @@ Demonstrates calling C++ code / structures from python.
 
 Links:
 
+    - http://svn.python.org/projects/ctypes/trunk/ctypes/docs/manual/tutorial.html
     - https://docs.python.org/3/tutorial/modules.html#packages        
     - https://packaging.python.org/tutorials/packaging-projects
     - https://packaging.python.org/tutorials/packaging-projects/#generating-distribution-archives
