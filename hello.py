@@ -59,3 +59,13 @@ print(size)
 print(retval)
 for i in range(size.value):
     print(retval[i])
+
+# using a standard cpp class
+class Foo(object):
+    def __init__(self,x,y):
+        self.obj = mydll.Foo_new(x,y)
+    def bar(self):
+        return mydll.Foo_bar(self.obj)
+
+foo = Foo(1,2)
+print(str(foo.bar()))

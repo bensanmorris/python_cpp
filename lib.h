@@ -15,3 +15,20 @@ extern "C" int add(int a, int b);
 extern "C" int ptr_test(char* v, int len);
 
 extern "C" char* get_bytes(int&);
+
+class Foo
+{
+public:
+    Foo(int x, int y);
+    int bar();
+
+private:
+    int x;
+    int y;
+};
+
+extern "C" 
+{
+    Foo* Foo_new(int x, int y);
+    int  Foo_bar(Foo*);        
+}

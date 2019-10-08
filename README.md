@@ -17,6 +17,7 @@ There is also a set of practice python code snippets in practice.py.
 
 Links:
 
+    - https://stackoverflow.com/questions/145270/calling-c-c-from-python
     - http://svn.python.org/projects/ctypes/trunk/ctypes/docs/manual/tutorial.html
     - https://docs.python.org/3/tutorial/modules.html#packages        
     - https://packaging.python.org/tutorials/packaging-projects
