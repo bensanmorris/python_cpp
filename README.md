@@ -4,6 +4,8 @@ Demonstrates calling C++ code / structures from python.
 
 #### Building & Running
 
+    - sudo apt-get install python3-venv 
+    - (gdb debugging support) sudo apt-get install gdb python3-dbg
     - python3 -m venv ve
     - . ve/bin/activate
     - ccmake .
