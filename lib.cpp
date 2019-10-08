@@ -1,3 +1,4 @@
+#include <signal.h>
 #include "lib.h"
 #include <string>
 
@@ -50,6 +51,7 @@ Foo* Foo_new(int x, int y)
 
 int Foo_bar(Foo* foo)
 {
+    raise(SIGSEGV);
     return foo->bar();
 }
 

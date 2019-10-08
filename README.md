@@ -13,7 +13,13 @@ Demonstrates calling C++ code / structures from python.
     - make
     - python hello.py
     
-There is also a set of practice python code snippets in practice.py.
+#### Debugging
+
+    - gdb python
+    - break file:linenum or break function_name
+    - run script.py
+    - bt
+    - list or list n (where n is numbers around current location)
 
 #### Packaging:
 
