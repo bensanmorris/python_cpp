@@ -27,8 +27,5 @@ private:
     int y;
 };
 
-extern "C" 
-{
-    Foo* Foo_new(int x, int y);
-    int  Foo_bar(Foo*);        
-}
+extern "C" Foo* Foo_new(int x, int y);
+extern "C" int  Foo_bar(Foo*);        
