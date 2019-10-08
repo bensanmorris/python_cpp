@@ -19,6 +19,7 @@ There is also a set of practice python code snippets in practice.py.
 
 Links:
 
+    - https://www.codeproject.com/articles/11805/embedding-python-in-c-c-part-i
     - https://stackoverflow.com/questions/145270/calling-c-c-from-python
     - http://svn.python.org/projects/ctypes/trunk/ctypes/docs/manual/tutorial.html
     - https://docs.python.org/3/tutorial/modules.html#packages        
