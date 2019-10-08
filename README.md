@@ -31,6 +31,7 @@ Links:
     - https://docs.python.org/3/tutorial/modules.html#packages        
     - https://packaging.python.org/tutorials/packaging-projects
     - https://packaging.python.org/tutorials/packaging-projects/#generating-distribution-archives
+    - https://stackoverflow.com/questions/4015417/python-class-inherits-object
 
 Steps:
 
