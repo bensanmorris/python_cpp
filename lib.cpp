@@ -33,3 +33,23 @@ char* get_bytes(int& len)
     len = n;
     return retval;
 }
+
+Foo::Foo(int x_, int y_) : x(x_), y(y_)
+{
+}
+
+int Foo::bar()
+{
+    return x + y;
+}
+
+Foo* Foo_new(int x, int y)
+{
+    return new Foo(x,y);
+}
+
+int Foo_bar(Foo* foo)
+{
+    return foo->bar();
+}
+
