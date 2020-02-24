@@ -51,7 +51,8 @@ Foo* Foo_new(int x, int y)
 
 int Foo_bar(Foo* foo)
 {
-    raise(SIGSEGV);
+    // uncomment line below to simulate seg fault so you can play around with debugging faulty C code called from Python under gdb as per the README.md
+    //raise(SIGSEGV);
     return foo->bar();
 }
 
