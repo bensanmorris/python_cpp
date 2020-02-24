@@ -23,17 +23,12 @@ Demonstrates calling C++ code / structures from python.
 
 #### Packaging:
 
-Steps:
-
     - python3 -m pip install --user --upgrade setuptools wheel
     - python3 setup.py sdist bdist_wheel
 
-Links:
-
-    - https://docs.python.org/3/extending/building.html
-
 #### Links
 
+    - https://docs.python.org/3/extending/building.html
     - https://www.codeproject.com/articles/11805/embedding-python-in-c-c-part-i
     - https://stackoverflow.com/questions/145270/calling-c-c-from-python
     - http://svn.python.org/projects/ctypes/trunk/ctypes/docs/manual/tutorial.html
