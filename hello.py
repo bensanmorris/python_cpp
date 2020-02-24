@@ -5,14 +5,15 @@
 # repr(x) - is the developer representation of x (calls object's __repr__) impl
 # ----
 
-import platform
+import platform, os
 from ctypes import *
 
 # load lib
 if platform.system() == 'Linux':
-    mydll = cdll.LoadLibrary("libhello_cpp.so")
+    libPath = "./libhello_cpp.so"
 else:
-    mydll = cdll.LoadLibrary("libhello_cpp.dylib")
+    libPath = "./libhello_cpp.dylib"
+mydll = cdll.LoadLibrary(libPath)
 
 # call simple fn
 print("hello=" + str(mydll.foo()))
